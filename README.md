@@ -25,8 +25,10 @@ This implementation extends the Azure samples with the following features:
 
 ## <a name="docker"></a>Run using Docker   
    
-### Minimal [Docker](https://www.docker.com/) image to run [Java](https://www.java.com/) applications.
-   This is based on [Alpine Linux](http://alpinelinux.org/) to keep the size minimal (about 25% of an ubuntu-based image).
+Minimal [Docker](https://www.docker.com/) image to run [Java](https://www.java.com/) applications.
+This is based on [Alpine Linux](http://alpinelinux.org/) to keep the size minimal (about 25% of an ubuntu-based image).
+
+#### Images on Docker hub: https://hub.docker.com/r/stans/azureiotclient/
    
 #### Tags
    
