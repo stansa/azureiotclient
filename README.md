@@ -2,7 +2,7 @@
 
 This repository is an example of how to build and run a Docker image that contains a Java based Azure IoT device client.
 
-# Table of Content
+# Table of Contents
 * [Features](#Features)
 * [Run Using Docker](#docker)
 * [Run as Standalone Java application](#java)
@@ -28,7 +28,9 @@ This implementation extends the Azure samples with the following features:
 Minimal [Docker](https://www.docker.com/) image to run [Java](https://www.java.com/) applications.
 This is based on [Alpine Linux](http://alpinelinux.org/) to keep the size minimal (about 25% of an ubuntu-based image).
 
-#### Images on Docker hub: https://hub.docker.com/r/stans/azureiotclient/
+#### Images on Docker Hub: 
+
+https://hub.docker.com/r/stans/azureiotclient/
    
 #### Tags
    
