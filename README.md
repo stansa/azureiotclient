@@ -19,9 +19,14 @@ This implementation extends the Azure samples with the following features:
     * Send messages using a configurable interval.
     * Simulate multiple devices each of which can send messages at configured inteval.
     * Multi-device simulation for AMQPS is currently not supported.
-    * Sends a message containing temperature, humidity and device timestamp in JSON format.
+    * Sends an eventcontaining temperature, humidity and device timestamp in JSON format.
     * Self-registration of IoT Devices using the [RegistryManager API](https://azure.github.io/azure-iot-sdks/java/service/api_reference/com/microsoft/azure/iot/service/sdk/RegistryManager.html#addDevice-com.microsoft.azure.iot.service.sdk.Device-), no pre-registration required.
     * Clean-up and delete auto-registered IoT devices after each run using 
+
+The event is sent using the following JSON format:  
+
+           {"deviceId":"io.github.stansa.azureiotsample:f6b51682-5c54-4186-af47-b43277c81b74","timestamp":"2016-02-29T19:57:11.780Z","temperature":7.0,"humidity":55.0}
+            
 
 ## <a name="docker"></a>Run using Docker   
    
