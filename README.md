@@ -4,7 +4,7 @@ This repository is an example of how to build and run a Docker image that contai
 
 # Table of Contents
 * [Features](#Features)
-* [Run Using Docker](#docker)
+* [Run using Docker](#docker)
 * [Run as Standalone Java application](#java)
 
 
