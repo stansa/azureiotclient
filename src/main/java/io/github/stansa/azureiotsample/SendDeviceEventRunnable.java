@@ -12,6 +12,8 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
+import java.sql.Timestamp;
+
 /**
  *
  */
@@ -36,10 +38,17 @@ public class SendDeviceEventRunnable implements Runnable {
 
     public void run() {
 
-        DeviceToCloudData data = new DeviceToCloudData();
-        data.deviceId = device.getDeviceId();
-        data.humidity = getRandomNumberBetween(30, 90);
-        data.temperature = getRandomNumberBetween(0, 50);
+        MachineToCloudData data = new MachineToCloudData();
+
+        data.machine =  getRandomNumberBetween(100, 200);;
+        data.orderNo = getRandomNumberBetween(900000, 999999);;
+        data.head = getRandomNumberBetween(1, 10);
+        data.worker = getRandomNumberBetween(900000, 999999);;
+        data.startTime = "2016-06-17 17:13:27";
+        data.stopTime = "2016-06-17 17:20:35";
+        data.state = getRandomNumberBetween(1, 10);
+        data.runtime = 302;
+
         data.timestamp = ZonedDateTime.now().format(DateTimeFormatter.ISO_INSTANT);
 
         String msgStr = null;
